@@ -3,6 +3,8 @@
 
 IOS 14 Corellium SSL Pinning Bypass
 
+![front](https://github.com/ElizaKeffeler/blog/blob/main/IOS%20Bypassing%20/img/ssl-bog%202.jpg)
+
 -----------------------------------------------
 
  Recently, some of the projects at nVisium have involved executing iOS penetration tests against a production application. 
