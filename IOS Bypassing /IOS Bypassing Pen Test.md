@@ -55,7 +55,7 @@ VII. Now, search and install the Theos Dependencies 
 
 2. SETUP THEOS ENVIRONMENT VARIABLE: 
 
- I.Open a terminal on the device and execute the following commands:
+ I. Open a terminal on the device and execute the following commands:
 
  ```bash
  echo "export THEOS=~/theos" >> ~/.profile
