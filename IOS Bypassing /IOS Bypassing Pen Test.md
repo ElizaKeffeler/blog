@@ -58,19 +58,21 @@ Now, search and install the Theos Dependencies 
 
 Open a terminal on the device and execute the following commands:
 
+```bash
 echo "export THEOS=~/theos" >> ~/.profile
+```
 
 ![four](https://github.com/ElizaKeffeler/blog/blob/main/IOS%20Bypassing%20/img/IMAGE4.png)
 
-
+```bash
 $git clone --recursive https://github.com/theos/theos.git $THEOS
-
+```
 
 ![five](https://github.com/ElizaKeffeler/blog/blob/main/IOS%20Bypassing%20/img/IMAGE5.png)
 
-
+```bash
 curl -LO https://github.com/theos/sdks/archive/master.zip & TMP=$(mktemp -d) & unzip master.zip -d $TMP & mv $TMP/sdks-master/*.sdk $THEOS/sdks & rm -r master.zip $TMP
-
+```
 ![six](https://github.com/ElizaKeffeler/blog/blob/main/IOS%20Bypassing%20/img/IMAGE6.png)
 
 
@@ -89,9 +91,9 @@ Search and install “swift-toolchain” from the BigBoss Repo (Default in Cydia
 Go back to the device’s terminal and install the SSLBypass tool: 
 
 
-
+```bash
 git clone https://github.com/evilpenguin/SSLBypass
-
+```
 
 ![eight](https://github.com/ElizaKeffeler/blog/blob/main/IOS%20Bypassing%20/img/IMAGE8.png)
 
@@ -101,9 +103,9 @@ cd SSLBypass/packages
 
 ![nine](https://github.com/ElizaKeffeler/blog/blob/main/IOS%20Bypassing%20/img/IMAGE9.png)
 
-
-
+```bash
 dpkg -i com.evilpenguin.sslbypass_1.0-5+debug_iphoneos-arm.deb
+```
 ![ten](https://github.com/ElizaKeffeler/blog/blob/main/IOS%20Bypassing%20/img/IMAGE10.png)
 
 
