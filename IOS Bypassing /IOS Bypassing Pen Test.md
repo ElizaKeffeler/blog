@@ -1,5 +1,5 @@
 
-
+#INTRODUCTION
 
 IOS 14 Corellium SSL Pinning Bypass
 
@@ -11,16 +11,10 @@ In these instances, our team members have had to find a different way to bypass 
 that by using Corellium iOS 14 VM to proxy through Burp suite, you can bypass SSL pinning. 
 
 
-
-HERE IS THE STEP-BY-STEP GUIDE:
-
+##HERE IS THE STEP-BY-STEP GUIDE:
 
 
 Within this example, a  iPhone X VM running iOS 14.1 and is jailbroken: 
-
-
-
-
 
 
 1. INSTALL THEOS:  
