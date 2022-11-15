@@ -6,9 +6,9 @@ IOS 14 Corellium SSL Pinning Bypass
 -----------------------------------------------
 
  Recently, some of the projects at nVisium have involved executing iOS penetration tests against a production application. 
- During this process, some of the applications only supported iOS 14.1 and higher, which is soon to become an industry standard. 
- In these instances, our team members have had to find a different way to bypass SSL. After doing extensive research, we found 
- that by using Corellium iOS 14 VM to proxy through Burp suite, you can bypass SSL pinning. 
+During this process, some of the applications only supported iOS 14.1 and higher, which is soon to become an industry standard. 
+In these instances, our team members have had to find a different way to bypass SSL. After doing extensive research, we found 
+that by using Corellium iOS 14 VM to proxy through Burp suite, you can bypass SSL pinning. 
 
 
 
