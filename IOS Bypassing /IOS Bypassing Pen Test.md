@@ -24,10 +24,10 @@ Within this example, a  iPhone X VM running iOS 14.1 and is jailbroken: 
 
  A cross-platform build system for creating iOS and other programs, later will be use to bypass SSL pinning.
 
-- Open Cydia (update or upgrade if needed), 
+Open Cydia (update or upgrade if needed), 
 
 
--Within Cydia:
+Within Cydia:
 
 Add  new repo
 
@@ -47,7 +47,7 @@ Click “Add Source” to confirm
 
 
 
-- Now, search and install the Theos Dependencies 
+Now, search and install the Theos Dependencies 
 
 
 ![three](https://github.com/ElizaKeffeler/blog/blob/main/IOS%20Bypassing%20/img/IMAGE3.png)
@@ -56,7 +56,7 @@ Click “Add Source” to confirm
 
 2. SETUP THEOS ENVIRONMENT VARIABLE: 
 
--Open a terminal on the device and execute the following commands:
+Open a terminal on the device and execute the following commands:
 
 echo "export THEOS=~/theos" >> ~/.profile
 
@@ -76,9 +76,9 @@ curl -LO https://github.com/theos/sdks/archive/master.zip & TMP=$(mktemp -d) & u
 
 3. INSTALL SWIFT-TOOLCHAIN:
 
--Reopen Cydia
+Reopen Cydia
 
--Search and install “swift-toolchain” from the BigBoss Repo (Default in Cydia)
+Search and install “swift-toolchain” from the BigBoss Repo (Default in Cydia)
 
 ![seven](https://github.com/ElizaKeffeler/blog/blob/main/IOS%20Bypassing%20/img/IMAGE7.png)
 
@@ -86,7 +86,7 @@ curl -LO https://github.com/theos/sdks/archive/master.zip & TMP=$(mktemp -d) & u
 
 4. INSTALL SSLBYPASS TOOL:
 
--Go back to the device’s terminal and install the SSLBypass tool: 
+Go back to the device’s terminal and install the SSLBypass tool: 
 
 
 
@@ -108,9 +108,9 @@ dpkg -i com.evilpenguin.sslbypass_1.0-5+debug_iphoneos-arm.deb
 
 
 
--Restart SpringBoard so the new tool goes into effect. NOTE: Device’s screen should flashing. 
+Restart SpringBoard so the new tool goes into effect. NOTE: Device’s screen should flashing. 
 
-- Then killall SpringBoard
+Then killall SpringBoard
 
 
 ![eleven](https://github.com/ElizaKeffeler/blog/blob/main/IOS%20Bypassing%20/img/IMAGE11.png)
@@ -119,41 +119,44 @@ dpkg -i com.evilpenguin.sslbypass_1.0-5+debug_iphoneos-arm.deb
 
 6. Install Burp Suite’s Certificate:
 
--Connect to the Corellium VPN, set Burp Suite to listen on your VPN's IP.
+Connect to the Corellium VPN, set Burp Suite to listen on your VPN's IP.
 
 ![12](https://github.com/ElizaKeffeler/blog/blob/main/IOS%20Bypassing%20/img/IMAGE12.png)
 
--Then set a manual proxy within the WI-FI settings of the iPhone to proxy through Burp Suite.
+Then set a manual proxy within the WI-FI settings of the iPhone to proxy through Burp Suite.
 
 ![13](https://github.com/ElizaKeffeler/blog/blob/main/IOS%20Bypassing%20/img/IMAGE13.png)
 
 
 
--Open Safari, go to http://burp ,Click the "CA Certificate" button and click “Allow”. 
+Open Safari, go to http://burp ,Click the "CA Certificate" button and click “Allow”. 
 
 ![14](https://github.com/ElizaKeffeler/blog/blob/main/IOS%20Bypassing%20/img/IMAGE14.png)
 
--Go to iPhone Settings and Select “General”, Select “Profile” 
+Go to iPhone Settings and Select “General”, Select “Profile” 
 
 ![15](https://github.com/ElizaKeffeler/blog/blob/main/IOS%20Bypassing%20/img/IMAGE15.png)
 
 
 
--Select the PortSwigger CA profile and click "Install" 3 times.
+Select the PortSwigger CA profile and click "Install" 3 times.
 
 ![16](https://github.com/ElizaKeffeler/blog/blob/main/IOS%20Bypassing%20/img/IMAGE16.png)
 
 
 
--Then  “Profile Installed” screen should be appearing with the profile showing a green verified symbol. 
+Then  “Profile Installed” screen should be appearing with the profile showing a green verified symbol. 
 
 
 ![17](https://github.com/ElizaKeffeler/blog/blob/main/IOS%20Bypassing%20/img/IMAGE17.png)
 
 
-  That’s it! Now Your device will proxy all HTTPS communications through Burp Suite with no problems! Happy testing!
 
-For similar blogs click HERE
+That’s it! Now Your device will proxy all HTTPS communications through Burp Suite with no problems! Happy testing!
+
+
+
+For similar blogs click ![HERE](https://nvisium.com/news/)
 
 Sources:   
 
